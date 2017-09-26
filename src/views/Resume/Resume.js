@@ -28,7 +28,7 @@ const Resume = () => (
 					<div className="resume-section-item">
 						<div className="flex-row responsive title">
 							<p>Hi, I’m Kimi!<br/><br/>I’m a front-end engineer, and user experience + product designer based in NYC. 
-							I have over 9 years expertise working in interactive technology. From San Francisco startups to NYC digital agencies; spanning industries from interactive advertising,  online magazines/publications, AR games for museum eduction, to high-end fashion. 
+							I have over 9 years expertise working in interactive technology. From San Francisco startups to NYC digital agencies; spanning industries from interactive advertising,  online magazines/publications, AR games for museum education, to high-end fashion. 
 							I create digital identity and experiences through concept development, UX & visual design, and creative coding solutions. I also like creating data visualizations, and visuals for live performances/music.</p>
 						</div>
 					</div>
@@ -50,7 +50,7 @@ const Resume = () => (
 						</div>
 						<p>Brainchild.co is a collection of engineers, operators and designers working on projects spanning from fashion, beauty to health care.</p>
 						<br />
-						<p>Lead front-end engineer and interaction designer for the <a href="http://thearrivals.com" target="_blank">The Arrivals</a>, <a href="http://onomie.com" target="_blank">Onomie</a>, and <a href="http://brainchild.co" target="_blank">Brainchild.co</a> brand sites since launch. Individually responsible for the creation and implementation of all front-end code and interface design for each brand’s respective responsive, cross-platform e-commerce web app. As well as designing and developling monthly interactive campaigns, supporting multiple product launches, and improving the site interface based on A/B studies.</p>
+						<p>Lead front-end engineer and interaction designer for the <a href="http://thearrivals.com" target="_blank">The Arrivals</a>, <a href="http://onomie.com" target="_blank">Onomie</a>, and <a href="http://brainchild.co" target="_blank">Brainchild.co</a> brand sites since launch. Individually responsible for the creation and implementation of all front-end code and interface design for each brand’s respective responsive, cross-platform e-commerce web app. As well as designing and developing monthly interactive campaigns, supporting multiple product launches, and improving the site interface based on A/B studies.</p>
 						<br />
 						<ul>
 							<li><p>&bull; Co-led conversion of <a href="http://thearrivals.com" target="_blank">thearrivals.com</a> into a ReactJS application.</p></li>
