@@ -1,0 +1,56 @@
+@mixin border($color) {
+	border: 1px dashed $color;
+}
+@mixin clickable() {
+	cursor: pointer;
+	text-decoration: underline;
+}
+@mixin borderbox() {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@mixin button($bg-color: black, $text-color: white) {
+	background-color: $bg-color;
+	color: $text-color;
+	@include clickable();
+	@include flexbox-center(row);
+	padding: $gutter/1.5;
+	@include clickable();
+	border: 2px solid black;
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover {
+		background-color: lighten($bg-color, 100%);
+		color: darken($text-color, 100%);
+	}
+}
+@mixin transition ($transition...) {
+	-webkit-transition: $transition;  
+	-moz-transition:    $transition;
+	-ms-transition:     $transition; 
+	-o-transition:      $transition;  
+}
+@mixin transform($string){
+	-webkit-transform:   $string;
+	-moz-transform: 	 $string;
+	-ms-transform: 		 $string;
+	-o-transform: 		 $string;
+}
+@mixin aspect-ratio($width, $height) {
+	position: relative;
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+	> .content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}

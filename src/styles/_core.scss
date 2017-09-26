@@ -1,0 +1,14 @@
+/*
+	* base for all background images
+*/
+.bg-img {
+	@include transition(background-image 100ms ease-in);
+	height: 100%;
+	width: 100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+.circle-img {
+	border-radius: 50%;
+}

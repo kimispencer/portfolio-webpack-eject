@@ -1,0 +1,16 @@
+@import '../../styles/_all';
+
+.contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+	@include flexbox-center(column);
+	#Canvas {
+	}
+/*	#ContactForm {
+		@include justify-content(center);	
+		margin-top: $gutter;
+	}*/
+}

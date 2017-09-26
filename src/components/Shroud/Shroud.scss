@@ -1,0 +1,26 @@
+@import '../../styles/_all';
+
+.Shroud {
+	z-index: $top;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: all $transition_speed ease;
+	&.show {
+		opacity: 1;
+		display: block;
+	}
+	&.hide {
+		opacity: 0;
+		display: none;
+	}
+}
+
+@media #{$desktop} {
+	.Shroud {
+		display: none !important;
+	}
+}

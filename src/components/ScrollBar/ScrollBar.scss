@@ -1,0 +1,40 @@
+@import '../../styles/_all';
+
+/*
+	scroll progress bar
+*/
+#ScrollProgress {
+	height: 5px;
+	width: 100%;
+	color: blue;
+	background: #fff;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: $ultimate_top;
+
+	/* Reset the appearance */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	/* Get rid of the default border in Firefox/Opera. */
+	border: none;
+
+	/* Progress bar container for Firefox/IE10+ */
+	background-color: transparent;
+
+	/* Progress bar value for IE10+ */
+	color: red;
+
+	&::-webkit-progress-bar {
+	  background-color: transparent;
+	}
+	&::-webkit-progress-value {
+	  background-color: red;
+	}
+	&::-moz-progress-bar {
+	  background-color: red;
+	}
+}

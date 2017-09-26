@@ -1,0 +1,95 @@
+/*
+	* flex rows
+*/
+.flex-row {
+	@include flexbox();
+	@include flex-flow(row);
+}
+.flex-row {
+	.half-span {
+		width: 50%;
+		height: 100%;
+	}
+	.third-span {
+		width: 33%;
+	}
+	.two-third-span {
+		width: 66%;
+	}
+	.quarter-span {
+		width: 25%;
+	}
+	.three-quarter-span {
+		width: 75%;
+	}
+}
+
+@media #{$tablet} {
+	.flex-row {
+		&.responsive {
+			@include flex-flow(column);
+			.half-span {
+				height: 50%;
+				width: 100%;
+			}
+			.third-span, .two-third-span, .quarter-span, .three-quarter-span {
+				width: 100%;
+			}
+		}
+	}
+}
+
+/*
+	* flex cols
+*/
+.flex-col {
+	@include flexbox();
+	@include flex-flow(column);
+}
+
+@media #{$tablet} {
+	.flex-col {
+		&.responsive {
+			@include flex-flow(row);
+		}
+	}
+}
+
+/* centering with flex */
+.flex-center {
+	&.flex-row {
+		@include flexbox-center(row);
+	}
+	&.flex-col {
+		@include flexbox-center(column);
+	}
+}
+
+/* basic layouts + padded widths */
+.left-col {
+	margin-right: $gutter*2;
+	width: 20%;
+}
+.right-col {
+	margin-left: $gutter*2;
+	width: 80%;
+}
+.padded-width {
+	width: 1000px;
+	max-width: calc(100vw - #{$gutter} * 2);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media #{$tablet} {
+	.left-col, .right-col {
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+	}
+	.padded-width {
+		max-width: 90vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

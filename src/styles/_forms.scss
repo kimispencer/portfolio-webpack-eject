@@ -1,0 +1,65 @@
+form {
+	max-width: calc(100vw - #{$gutter*2});
+
+	input, textarea {
+		color:#3c3c3c;
+		background-color: #fbfbfb;
+		padding: $gutter/2;
+		margin-bottom: $gutter/2;
+		width:100%;
+		@include borderbox();
+	}
+	input, textarea {
+		border: 2px solid black;
+/*		border: 0;
+		outline: 0;
+		background: transparent;
+		border-bottom: 3px solid black;*/
+	}
+	textarea {
+		width: 100%;
+		height: 150px;
+		line-height: 150%;
+		resize:vertical;
+	}
+	button[type='submit'], .button {
+		width: 100%;
+	}
+}
+
+/* buttons */
+.button, button[type='submit'] {
+	@include button();
+	width: auto;
+	max-width: $button_width;
+	@include transition(all $transition_speed ease);
+	&.secondary {
+		@include button(rgba(0,0,0,0), black);
+	}
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+@media #{$desktop} {
+	form {
+		min-width: 500px;
+	}
+}
+
+@media #{$tablet} {
+	form {
+		width: 100%;
+	}
+}

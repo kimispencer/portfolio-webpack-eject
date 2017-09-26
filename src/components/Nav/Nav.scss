@@ -1,0 +1,108 @@
+@import '../../styles/_all';
+
+.nav-header-bar {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: $fixed_nav_height;
+	width: 100vw;
+	background-color: $white;
+	border-bottom: 1px solid $lightgrey;
+}
+/*
+	* mobile, slide out
+	* desktop, top bar content
+*/
+.nav {
+	z-index: $ultimate_top;
+	@include transition(all $transition_speed ease);
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	.logo-container {
+		margin: $gutter/2 $gutter*1.5;
+	}
+	.nav-links {
+		@include flexbox();
+		li {
+			margin: $gutter/2;
+			display: inline;
+		}
+	}
+}
+#Logo {
+	height: 15px;
+	width: auto;
+}
+
+@media #{$desktop} {	
+	.nav-trigger {
+		display: none;
+	}
+	.nav {
+		width: 100vw;
+		height: $fixed_nav_height;
+		border-bottom: 1px solid $lightgrey;
+		@include flexbox-center(row);
+		@include justify-content(space-between);
+		.nav-links {
+			@include flex-flow(row);
+			@include justify-content(flex-end);
+			padding: 0;
+			margin: 0 $gutter;
+			li {
+				margin: $gutter/2;
+				display: inline;
+			}
+		}
+	}
+}
+
+@media #{$tablet} {
+	.nav-trigger {
+		@include transform(rotate(90deg));
+		display: block;
+		padding: $gutter/2;
+		cursor: pointer;
+		position: fixed;
+		top: 0;
+		right: 0;
+		text-shadow: white 1px 0px 0px;
+		h1 {
+			display: inline-block;
+			margin: 0;
+		}
+	}
+	.logo-container {
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin: $gutter;
+	}
+	.nav {
+		z-index: $ultimate_top;
+		height: 100vh;
+		width: $slideout_nav_width;
+		max-width: 70vw;
+		background-color: $matte_black;
+		color: white;
+		&.open {
+			@include transform(translate3d(0vw, 0, 0));
+		}
+		&.closed {
+			@include transform(translate3d(-$slideout_nav_width, 0, 0));
+		}
+		.nav-links {
+			@include flex-flow(column);
+			padding: $gutter;
+			margin: $gutter*2 0 0 0;
+			li {
+				margin: 10px;
+				display: block;
+				p {color: white; }
+			}
+		}
+	}
+}

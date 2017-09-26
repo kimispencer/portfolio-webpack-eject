@@ -1,0 +1,28 @@
+@import '../../styles/_all';
+
+.Footer {
+	border-top: 2px solid $footer_color;
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: $gutter*4;
+	color: black;
+	text-align: center;
+	min-height: $footer_height;
+	height: auto;
+
+	#Hello {
+		padding-top: $gutter*2;
+	}
+	#SocialMediaList {
+		margin-top: $gutter*2;
+		@include flexbox-center(row);
+		li {
+			margin: $gutter/2;
+			object {
+				height: $gutter*1.5;
+				width: $gutter*1.5;
+			}
+		}
+	}
+}

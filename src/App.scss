@@ -1,0 +1,31 @@
+@import './styles/_all';
+
+html {
+	height: 100%;
+}
+.App {
+	/*min-height: 100vh;*/
+	/*position: relative;*/
+	margin: 0;
+	padding: 0;
+	.Nav {
+		/* CSS on the component level */
+	}
+	.main-content {
+		position: relative;
+		min-height: calc(100vh - #{$fixed_nav_height});
+		margin-top: $fixed_nav_height;
+		.padded-top {
+			margin-top: calc(#{$fixed_nav_height} + #{$gutter});
+		}
+	}
+	.Footer {
+		/* CSS on the component level */
+	}
+}
+@media #{$desktop} {
+	.App {
+		.main-content {
+		}
+	}
+}

@@ -1,0 +1,182 @@
+/* loading spinner */
+@keyframes spinner-anim {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* background image zoom */
+@keyframes background-zoom {
+	0% {
+		background-size: 100%;
+	}
+	100% {
+		background-size: 110%;
+	}
+}
+
+/* draw svg outline */
+@keyframes draw-svg {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+/* fill svg */
+@keyframes fill-svg {
+	to { fill-opacity: 1; }
+}
+
+/* fade in  + slight pulse */
+@keyframes fade-in { 
+	0% {
+		opacity: 0;
+		transform: scale(.1);
+	}
+
+	85% {
+		opacity: 1;
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+/* device frame scroll up/down */
+@keyframes bounce-y {
+	0% {
+	    transform: translateY(0px);
+	}
+	50% {
+	    transform: translateY(-15%);
+	}
+	100% {
+	    transform: translateY(0px);
+	}
+}
+
+
+
+/* gears rotation */
+@keyframes rotate-right {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+         transform: rotate(360deg);
+    }
+}
+@keyframes rotate-left {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+         transform: rotate(0deg);
+    }
+}
+
+.gears-icon {
+    &.animated {
+        path { 
+            animation-name: rotate-left; 
+            animation-duration: 15.5s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
+            &.big-gear {
+                animation-name: rotate-right; 
+            }
+        }
+    }
+}
+
+/* flashing lightbulb */
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.lightbulb-icon {
+    &.animated {
+        path {
+            &.light {
+                animation-name: flash;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+}
+
+/* scribbling feather */
+@keyframes scribble {
+    0% {
+        transform: rotate(-10deg);
+    }
+    5% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+         transform: rotate(0deg);
+    }
+}
+.pencil-icon {
+    &.animated {
+        path {
+            animation-name: scribble;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            transform-origin: 0% 0%;
+        }
+    }
+}
+
+/* paint dots */
+.paint-icon {
+    &.animated {
+        .paint-dot {
+            /*animation-name: flash;*/
+            animation-iteration-count: infinite;
+
+            &[data-index="0"] {
+                animation-duration: 1s;
+            }
+            &[data-index="1"] {
+                animation-duration: 3s;
+            }
+            &[data-index="2"] {
+                animation-duration: 9s;
+            }
+        }
+    }
+}
+
+/* ruler & pen */
+@keyframes pen {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+         transform: translate(10.0px, 0);
+    }
+}
+
+.ruler-icon {
+    &.animated {
+        .pen {
+            animation-name: pen;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+    }
+}

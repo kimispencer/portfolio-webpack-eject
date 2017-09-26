@@ -1,0 +1,22 @@
+@import '../../styles/_all';
+
+.text-animation {
+	.fade-in-letter {
+		animation: fade-in 1s linear;
+		animation-fill-mode: both;
+	}
+
+	$elements: 1000;
+	@for $i from 0 to $elements {
+		.fade-in-letter:nth-child(#{$i}) {
+			animation-delay: $i * 50ms;
+		}
+	}
+	&#ShowMeMore {
+		.fade-in-letter {
+			animation-delay: 3.5s;
+			animation-duration: 2s;
+			font-size: 14px;
+		}
+	}
+}
