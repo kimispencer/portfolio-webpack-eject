@@ -14,7 +14,7 @@ const Resume = () => (
 					<div className="center">
 						<p className="monospace uppercase">hello@kimispencer.com</p>
 						<p className="monospace uppercase">Brooklyn, NY</p>
-						<a className="underline" href={`http://kimispencer.com/${ResumePDF}`} target="_blank"><p className="monospace uppercase">Download Resume</p></a>
+						<a className="underline" href={`http://kimispencer.com${ResumePDF}`} target="_blank"><p className="monospace uppercase">Download Resume</p></a>
 						<img alt="profile" className="circle-img profile-pic" src={ProfilePic} />
 						{/*<ImageLoader className="circle-img profile-pic" src="profile.jpg" imgKey="resume" isBg={false} alt="Profile Pic" />*/}
 					</div>
