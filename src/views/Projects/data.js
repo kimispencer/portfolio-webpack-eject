@@ -6,7 +6,7 @@ export default  [
 		heroImg: 'bg-01.jpg',
 		imgKey: 'projects/arrivals',
 		screenShots: [
-			'phone-00.jpg', 'desktop-01.jpg', 'phone-01.jpg'
+			'desktop-02.jpg', 'phone-02.jpg', 'desktop-03.jpg', 'phone-03.jpg'
 		],
 		projectImgs: [
 			'cover-16.jpg', 'cover-10.jpg', 'cover-13.jpg', 'cover-00.jpg', 'cover-17.jpg', 'cover-01.jpg', 'cover-12.gif', 'cover-02.jpg', 'cover-03.jpg', 'cover-04.jpg', 'cover-11.gif', 'cover-05.jpg', 'cover-14.jpg', 'cover-06.jpg', 'cover-07.jpg', 'cover-08.jpg', 'cover-09.jpg'

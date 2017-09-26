@@ -27,6 +27,7 @@ class ImageLoader extends React.Component {
 
 	render() {
 		let img = (this.props.src.indexOf('http') > -1) ? this.props.src : require(`../../assets/${this.props.imgKey}/${this.props.src}`);
+console.log(`../../assets/${this.props.imgKey}/${this.props.src}`)
 
 		if(this.props.isBg === false) {
 			return (
