@@ -1,6 +1,7 @@
 import React from 'react';
 // import ImageLoader from '../../components/ImageLoader/ImageLoader';
 import ProfilePic from '../../assets/resume/profile.jpg';
+import ResumePDF from '../../assets/resume/resume.pdf';
 import './Resume.css';
 
 const Resume = () => (	
@@ -15,6 +16,7 @@ const Resume = () => (
 						<p className="monospace uppercase">Brooklyn, NY</p>
 						<img alt="profile" className="circle-img profile-pic" src={ProfilePic} />
 						{/*<ImageLoader className="circle-img profile-pic" src="profile.jpg" imgKey="resume" isBg={false} alt="Profile Pic" />*/}
+						<a className="underline" href={`http://kimispencer.com/${ResumePDF}`} target="_blank">Download Resume</a>
 					</div>
 				</div>
 			</div>
@@ -25,7 +27,7 @@ const Resume = () => (
 				<div className="right-col">
 					<div className="resume-section-item">
 						<div className="flex-row responsive title">
-							<p>Hi, I’m Kimi!<br/><br/>I’m a front-end engineer, and user experience + interaction designer based in NYC. 
+							<p>Hi, I’m Kimi!<br/><br/>I’m a front-end engineer, and user experience + product designer based in NYC. 
 							I have over 9 years expertise working in interactive technology. From San Francisco startups to NYC digital agencies; spanning industries from interactive advertising,  online magazines/publications, AR games for museum eduction, to high-end fashion. 
 							I create digital identity and experiences through concept development, UX & visual design, and creative coding solutions. I also like creating data visualizations, and visuals for live performances/music.</p>
 						</div>
@@ -61,16 +63,16 @@ const Resume = () => (
 					<div className="resume-section-item">
 						<div className="flex-row responsive title">
 							<h4 className="bold uppercase institution">suited magazine</h4>
-							<p className="job-title monospace">Lead Full-stack Engineer & UX Designer - 2016 to 2017</p>
+							<p className="job-title monospace">Lead Full-stack Engineer & Digital Designer - 2016 to 2017</p>
 						</div>
 						<p><a href="http://suitedmagazine.com" target="_blank">SUITED</a> is a biannual fashion and art publication with a singular mission in mind: to celebrate those who have found what they are well-suited for. Their objective is to showcase independent thinkers passionate about creating work that is at once inspired, influential, and timeless.</p>
 						<br />
-						<p>Full-stack engineer and UX designer for SUITEDs Magazine; created a customized CMS driven template design built on top of the Squarespace developer platform. Worked one-on-one with the creative director to translate the print publication into a branded online experience; built visual mockups and interface designs.</p>
+						<p>Full-stack engineer and UX designer for SUITED Magazine; created a customized CMS driven template design built on top of the Squarespace developer platform. Worked one-on-one with the creative director to translate the print publication into a branded online experience; built visual mockups and interface designs.</p>
 					</div>
 					<div className="resume-section-item">
 						<div className="flex-row responsive title">
 							<h4 className="bold uppercase institution">bolster</h4>
-							<p className="job-title monospace">Front-end Developer & UX Designer - 2013 to 2014</p>
+							<p className="job-title monospace">Front-end Developer & Product Designer - 2013 to 2014</p>
 						</div>
 						<p><a href="http://bolster.us" target="_blank">Bolster.us</a> is a web application for home owners & contractors to connect and manage home remodeling projects.<br/><br/>Designed and developed a user-facing public website as well as an admin site for users to log in, find their match, upload/share documents & monitor their project's progression. Built with AngularJS v1.</p>
 					</div>

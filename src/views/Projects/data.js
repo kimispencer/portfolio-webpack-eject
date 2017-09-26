@@ -176,7 +176,7 @@ export default  [
 		`
 		<p><a href="http://bolster.us/" target="_blank">Bolster.us</a> is a web application for home owners & contractors to connect and manage home remodeling projects.</p>
 		<br/>
-		<p>I was brought on to lead  UX and interaction design for the project; as such I designed and developed a user-facing public website as well as an admin site for users to log in, find their match, upload/share documents & monitor their project's progression. I additionally assisted with front-end development on the site using AngularJS v1 to creative custom UI directives.</p>
+		<p>I was brought on to lead  UX and product design for the project; as such I designed and developed a user-facing public website as well as an admin site for users to log in, find their match, upload/share documents & monitor their project's progression. I additionally assisted with front-end development on the site using AngularJS v1 to creative custom UI directives.</p>
 		`
 
 	},
