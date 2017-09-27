@@ -48,6 +48,9 @@ export default  [
 			'Visual & UX designer',
 			'Responsive web design',
 		],
+		projectImgs: [
+			'wireframe-00.jpg', 'wireframe-01.jpg'
+		],
 		technologyUsed: 'ReactJS, ES6, Webpack, HTML5, SASS/CSS3, Sketch, Git',
 		intro: 
 			`
