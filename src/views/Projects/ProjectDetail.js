@@ -28,7 +28,7 @@ const PDF_data = {
 	},
 	arrivals_wireframes: {
 		src: ArrivalsWireframesPDF,
-		name: "Arrivals Responsive wireframes PDF"
+		name: "Arrivals responsive wireframes PDF"
 	},
 	thesis: {
 		src: ThesisPDF,
