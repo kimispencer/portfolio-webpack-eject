@@ -52,12 +52,9 @@ class ImageLoader extends React.Component {
 		} else {
 			return (
 				<div className={`${this.props.className ? this.props.className : ''} ${this.state.loaded ? 'loaded' : null} image-loader bg-img`} style={ {backgroundImage: 'url(' + img + ')'} }>
-					{this.state.loaded 
-						? this.props.children 
-						: <div className="spinner-container">
-							<div className="spinner"></div>
-						</div>
-					}
+					<div className="spinner-container">
+						<div className="spinner"></div>
+					</div>
 					<img
 						style={ {display: 'none'} }
 						src={img}
