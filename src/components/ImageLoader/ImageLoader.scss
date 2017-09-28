@@ -8,11 +8,6 @@
 	&.bg-img {
 		@include flexbox-center(column);
 	}
-	&.loaded {
-		.spinner-container {
-			opacity: 0;
-		}
-	}
 	img {
 	}
 	.spinner-container {
