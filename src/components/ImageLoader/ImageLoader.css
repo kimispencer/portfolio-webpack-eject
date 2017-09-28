@@ -490,7 +490,6 @@ h1.center, h2.center, h3.center, h4.center, p.center, small.center, .title.cente
     -ms-justify-content: center;
     justify-content: center;
     -ms-flex-pack: center; }
-  .image-loader img { }
   .image-loader .spinner-container {
     display: -webkit-box;
     display: -moz-box;
